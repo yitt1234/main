@@ -1,0 +1,34 @@
+body{
+    background-image: url("https://textstorage.netlify.app/bg.jpg");
+    background-repeat : no-repeat;
+    background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+}
+input{
+    border: none;
+    border-bottom: 2px solid  white;
+    box-shadow:none;
+    outline:none;
+    background-color: transparent;
+    color:white;
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+    font-size:18px;
+}
+div{
+    text-align:center;
+    color:white;
+}
+
+button{
+    width:120px;
+    height:40px;
+    background-color:#004fff;
+    color:white;
+    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+    font-size:16px;
+    font-weight:bold;
+    border-radius:20px;
+
+}

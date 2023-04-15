@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6c03e70cde.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="weather.html">weather</a></li>
+      <li><a href="doge1.html">Dogecoin</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="https://www.instagram.com/dev.lsa09/"><i class="fa-brands fa-instagram" style="color:white;"></i></a></li>
+      <li><a href="https://github.com/yitt1234"><i class="fa-brands fa-github" style="color:white;"></i></a></li>
+    </ul>
+    
+  </nav>
+<br><br><br><br>
+<form id="1">
+  <center><h1 style="color:white;">Sign Up page</h1></center>
+  <div> email : <input type="email" id="signUpEmail" /> </div>
+  <div> password : <input type="password" id="signUpPassword" /> </div>
+  <center><button style="margin-top:10px;" type="submit" id="signUpButton">Sign Up</button></center>
+  <center> <button id="2" style="margin-top:10px;">Sign In page</button></center>
+
+</form>
+
+<form id="3">
+  <center><h1 style="color:white;">Sign In</h1></center>
+  <div> email : <input type="email" id="signInEmail" /> </div>
+  <div> password : <input type="password" id="signInPassword" /> </div>
+  <center><button style="margin-top:10px;" type="submit" id="signInButton" >Sign In</button></center>
+  <center> <button id="4" style="margin-top:10px;" >Sign up page</button></center>
+
+</form>
+<a href="logined.html"><button style="background-color: transparent;color:transparent;border: none;" id="otherpage"></button></a>
+<script>
+  const sibal = localStorage.getItem("emaill")
+if(sibal == null){
+
+}else{
+  $("#otherpage").click()
+   
+}
+</script>
+<script type="module" src="login.js">
+
+</script>
+
+</body>
+</html>

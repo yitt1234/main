@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dogecoin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/6c03e70cde.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body{
+    background: url(https://textstorage.netlify.app/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+  }
+    </style>
+    <script>
+        function Dogecoin (){
+$(document).ready(function(){
+  $.ajax({
+    //도지코인 가격을받아옴ㅗ
+    url: "https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd",
+    method: "GET",
+    dataType: "json",
+    success: function(data){
+        //성공하면 가격을 띄움 ㅗ
+      $("#price").html("$" + data.dogecoin.usd);
+      console.log(data)
+    }
+  });
+});
+
+        }
+        //위대한 도지코인의 가격을 0.1초마다 호출함ㅗ
+        setInterval(Dogecoin, 100)
+    </script>
+  </head>
+  <body>
+    <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="weather.html">weather</a></li>
+          <li><a href="#">Dogecoin</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="https://www.instagram.com/dev.lsa09/"><i class="fa-brands fa-instagram" style="color:white;"></i></a></li>
+          <li><a href="https://github.com/yitt1234"><i class="fa-brands fa-github" style="color:white;"></i></a></li>
+        </ul>
+        
+      </nav>
+      <center><img width="500" src="doge.png"></center>
+      <br><br><br><br>
+      <center><span style="font-size:50px;color:white;" id="price"></span></center>
+  </body>
+
+
+</html>
