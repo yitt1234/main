@@ -133,7 +133,7 @@
             getWeather()
         });
         function getWeather(){
-        $.get("https://api.openweathermap.org/data/2.5/weather?q="+va+"&id=524901&APPID=710a8a155ade8daf23d7240bf1ca4d6f&units=metric", function( data ) {
+        $.get("https://api.openweathermap.org/data/2.5/weather?q="+va+"&id=524901&APPID=&units=metric", function( data ) {
             console.log( data );
             // console.log( "Local Temperature: " + data.main.temp );
             $('.name').html(data.name)
