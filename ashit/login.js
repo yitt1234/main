@@ -6,12 +6,7 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDnsOXsJdJwmFvtJIzvVEu54TvXt6yTAEs",
-    authDomain: "textcloud-a43c9.firebaseapp.com",
-    projectId: "textcloud-a43c9",
-    storageBucket: "textcloud-a43c9.appspot.com",
-    messagingSenderId: "482460150107",
-    appId: "1:482460150107:web:85e298807cdac91db2927e",
+  
 
 };
 
